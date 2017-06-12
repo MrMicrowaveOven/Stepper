@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  </head>
+  <body>
+    <ul class="stepper linear horizontal">
+      <li class="step active">
+        <div class="step-title waves-effect">Upload JSON</div>
+        <div class="step-content">
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="file" class="dropify"/>
+              <!-- <input id="email" name="email" type="email" class="validate" required>
+              <label for="first_name">Your e-mail</label> -->
+            </div>
+          </div>
+          <div class="step-actions">
+            <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-title waves-effect">Select Array</div>
+        <div class="step-content">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" name="password" type="password" class="validate" required>
+                <label for="password">Your password</label>
+              </div>
+            </div>
+          <div class="step-actions">
+            <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
+            <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-title waves-effect">Choose Columns</div>
+        <div class="step-content">
+          Finish!
+          <div class="step-actions">
+            <button class="waves-effect waves-dark btn" type="submit">SUBMIT</button>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-title waves-effect">Download CSV</div>
+        <div class="step-content">
+          Finish!
+          <div class="step-actions">
+            <button class="waves-effect waves-dark btn" type="submit">SUBMIT</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Materializecss compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Materialize-Stepper CSS (after importing materialize.css) -->
+    <link rel="stylesheet" href="materialize-stepper.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Materializecss compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <!-- jQueryValidation Plugin -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    <!--Import Materialize-Stepper JavaScript (after the jquery.validate.js and materialize.js) -->
+    <script src="materialize-stepper.min.js"></script>
+    <script src="dist/js/dropify.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="dist/css/dropify.css">
+
+    <script>
+    $(function(){
+      $('.stepper').activateStepper();
+    });
+    $('.dropify').dropify();
+    </script>
+  </body>
+</html>
