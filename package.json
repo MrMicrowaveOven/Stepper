@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "materialize-css": "^0.98.2"
-  }
+    "json-formatter-js": "^2.2.0",
+    "materialize-css": "^0.98.2",
+    "requirejs": "^2.3.3"
+  },
+  "devDependencies": {}
 }

@@ -26,12 +26,13 @@
         </div>
       </li>
       <li class="step">
-        <div class="step-title waves-effect">Select Array</div>
+        <div class="step-title waves-effect">Select Array to Table-ize</div>
         <div class="step-content">
           <div class="row">
-            <div class="input-field col s12">
-              <input id="password" name="password" type="password" class="validate" required>
-                <label for="password">Your password</label>
+            <div class="input-field col s12" id="JSON-visual">
+              <!-- <input id="password" name="password" type="password" class="validate" required>
+                <label for="password">Your password</label> -->
+                Your JSON here, select which part to make into a CSV
               </div>
             </div>
           <div class="step-actions">
@@ -43,18 +44,21 @@
       <li class="step">
         <div class="step-title waves-effect">Choose Columns</div>
         <div class="step-content">
-          Finish!
+          Which columns would you like in your table?
           <div class="step-actions">
-            <button class="waves-effect waves-dark btn" type="submit">SUBMIT</button>
+            <!-- <button class="waves-effect waves-dark btn" type="submit">SUBMIT</button> -->
+            <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
+            <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
           </div>
         </div>
       </li>
       <li class="step">
         <div class="step-title waves-effect">Download CSV</div>
         <div class="step-content">
-          Finish!
+          Here's your CSV!
           <div class="step-actions">
-            <button class="waves-effect waves-dark btn" type="submit">SUBMIT</button>
+            <button class="waves-effect waves-dark btn" type="submit">Download</button>
+            <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
           </div>
         </div>
       </li>
@@ -77,7 +81,8 @@
     <script src="materialize-stepper.min.js"></script>
     <script src="dist/js/dropify.js" type="text/javascript"></script>
     <link rel="stylesheet" href="dist/css/dropify.css">
-
+    <script data-main="scripts/main" src="scripts/require.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
     <script>
     $(function(){
       $('.stepper').activateStepper();
