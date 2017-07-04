@@ -13,5 +13,7 @@
     "materialize-css": "^0.98.2",
     "requirejs": "^2.3.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
