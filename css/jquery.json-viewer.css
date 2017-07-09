@@ -1,6 +1,6 @@
 /* Syntax highlighting for JSON objects */
 .lightgray {
-  color: lightgray;
+  color: blue;
 }
 ul.json-dict, ol.json-array {
   list-style-type: none;
