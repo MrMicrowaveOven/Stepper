@@ -1,1 +1,12 @@
-{"foobar":{"groan":"foobaz"}}
+{
+  "foobar": {
+    "groan": {
+        "groan2":"foobaz",
+        "gods": "Meh"
+    }
+  },
+  "fooarray": [
+    124,
+    "foeih"
+  ]
+}

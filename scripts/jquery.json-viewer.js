@@ -48,7 +48,7 @@
       if (json.length > 0) {
         html += '[<ol class="json-array">';
         for (var i = 0; i < json.length; ++i) {
-          html += '<li>';
+          html += '<li class="jsonBit">';
           /* Add toggle button if item is collapsable */
           if (isCollapsable(json[i])) {
             html += '<a href class="json-toggle"></a>';
@@ -72,7 +72,7 @@
         html += '{<ul class="json-dict">';
         for (var key in json) {
           if (json.hasOwnProperty(key)) {
-            html += '<li>';
+            html += '<li class="jsonBit">';
             var keyRepr = options.withQuotes ?
               '<span class="json-string">"' + key + '"</span>' : key;
             /* Add toggle button if item is collapsable */
